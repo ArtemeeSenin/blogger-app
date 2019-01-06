@@ -6,4 +6,4 @@ const postSchema = new mongoose.Schema({
     constent: String
 })
 
-mongoose.model('post', postSchema);
+mongoose.model('Post', postSchema);
