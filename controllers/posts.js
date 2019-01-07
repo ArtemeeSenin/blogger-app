@@ -6,7 +6,9 @@ const Post = mongoose.model('Post');
 module.exports.postList = function(req, res, cb) {
     Post
         .find()
+        .sort({ date: 'desc' })
         .then(function(doc) {
+            console.log(doc)
             cb(req, res, doc);
         })
         .catch(function(err) {
