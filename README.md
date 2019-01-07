@@ -1,6 +1,8 @@
 # blogger-app
 Simple blog made with Node, MongoDB
 
+[Reference task](https://kodaktor.ru/blogapi2.pdf)
+
 Application was deployed to heroku and is available [here](https://limitless-reef-49721.herokuapp.com)
 
 Backend is made with Express on Node.js, as a database was used MongoDB with Mongoose and deployed to mLab.
