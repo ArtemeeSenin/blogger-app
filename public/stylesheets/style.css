@@ -14,7 +14,6 @@ a {
   flex-direction: column;
 }
 .posts__post {
-  padding: 20px;
   border: 1px solid grey;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -24,6 +23,15 @@ a {
 }
 .posts__post p {
   margin-bottom: 0;
+}
+.posts__post a {
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.posts__post button {
+  margin-top: 4px;
 }
 .categories {
   display: flex;

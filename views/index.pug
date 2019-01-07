@@ -5,9 +5,11 @@ block content
   h2 Recent posts in my blog
   ul.posts
     each post in postsList
-      li.posts__post
-        h3= post.title
-        ul.categories
-          each category in post.categories
-            li= category
-        p= post.content
+      li.posts__post(id=post._id)
+        a(href=`/posts/${post._id}`)
+          h3= post.title
+          ul.categories
+            each category in post.categories
+              li= category
+          p= post.content
+          button Delete

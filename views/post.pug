@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    ul.categories
+        each category in post.categories
+        li= category
+    p= post.content
+    button Delete
+    a(href="/") See all posts
