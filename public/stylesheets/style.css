@@ -35,6 +35,10 @@ a {
   padding: 4px;
 }
 
+.button:disabled{
+  background-color: rgba(138, 131, 112, 0.5);
+}
+
 .link {
   display: inline-block;
   margin-top: 10px;
