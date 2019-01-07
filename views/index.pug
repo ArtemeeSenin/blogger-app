@@ -3,7 +3,9 @@ extends layout
 block content
   h1= title
     img.logo(src="/favicon.png" alt="logo" width="36px")
-  h2 Recent posts in my blog
+  div(style="display: flex; justify-content: space-between; align-items: center;")
+    h2 Recent posts in my blog
+    a.button(href="/add-post") Add post
   ul.posts#post-list
     each post in postsList
       li.posts__post(id=post._id)
@@ -14,8 +16,5 @@ block content
               li= category
           p= post.content
           button.button.button--small(data-id=post._id) Delete
-
-  hr
-  a.button(href="/add-post") Add post
 
   script(src="/javascripts/index.js")
