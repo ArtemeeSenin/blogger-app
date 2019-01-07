@@ -2,11 +2,12 @@ extends layout
 
 block content
   h1= title
-  ul
+  h2 Recent posts in my blog
+  ul.posts
     each post in postsList
-      li
-        h2= post.title
-        ul
+      li.posts__post
+        h3= post.title
+        ul.categories
           each category in post.categories
             li= category
         p= post.content

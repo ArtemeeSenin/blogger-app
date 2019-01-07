@@ -6,3 +6,35 @@ body {
 a {
   color: #00B7FF;
 }
+
+.posts, .categories {
+  list-style-type: none;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: column;
+}
+.posts__post {
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.posts__post h3 {
+  margin-top: 0;
+}
+.posts__post p {
+  margin-bottom: 0;
+}
+.categories {
+  display: flex;
+  flex-direction: row;
+}
+.categories li {
+  padding: 6px;
+  border: 1px solid rgb(98, 177, 208);
+  border-radius: 4px;
+  color: #fefefe;
+  background-color: rgba(58, 166, 208, .5);
+  margin-right: 10px;
+}
+
