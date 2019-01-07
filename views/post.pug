@@ -2,9 +2,13 @@ extends layout
 
 block content
     h1= title
+    p= content
     ul.categories
-        each category in post.categories
-        li= category
-    p= post.content
-    button Delete
+        each category in categories
+            li= category
+    hr
+    button#delete(data-id=_id) Delete
+    br
     a(href="/") See all posts
+
+    script(src="/javascripts/post.js")

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h1 Add post
+    form(action="/api/posts")
+        label Title
+            input(name="title" type="text")
+        label Content
+            textarea(name="content" cols="30" rows="10")
+        label Categories (multiple)
+            select(name="categories[]" multiple)
+                option(value="News") News
+                option(value="Travel") Travel
+                option(value="Food") Food
+                option(value="Photography") Photography
+        button(type="submit") Add
+
+    script(src="/javascripts/add-post.js")
