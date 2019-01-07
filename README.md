@@ -26,6 +26,7 @@ For CRUD operations under server side there was created api which is used by Jav
 #### Response examples
 
 Route: [/api/posts](https://limitless-reef-49721.herokuapp.com/api/posts) `GET`
+
 Response: 
 ```
 [
@@ -52,6 +53,7 @@ Response:
 ---
 
 Route: [/api/posts](https://limitless-reef-49721.herokuapp.com/api/posts) `POST` – Add new post
+
 Request: 
 ```
 {
@@ -79,6 +81,7 @@ Response:
 ---
 
 Route: [/api/posts/:id](https://limitless-reef-49721.herokuapp.com/posts/5c335a770adcf10c3b4aeb77) `GET` 
+
 Response:
 ```
 {
@@ -94,6 +97,7 @@ Response:
 ---
 
 Route: [/api/posts/:id](https://limitless-reef-49721.herokuapp.com/posts/5c335a770adcf10c3b4aeb77) `DELETE` 
+
 Response:
 ```
 {
