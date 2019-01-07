@@ -88,7 +88,24 @@ form label, form input, form textarea, form select {
   width: 100%;
   display: block;
 }
-
+form input, form textarea, form select {
+  margin-top: 6px;
+  border: 1px solid #aeaeae;
+  border-radius: 4px;
+  transition: border-color .3s;
+}
 form label {
   margin-bottom: 10px;
+}
+.error {
+  border: 1px solid crimson;
+  border-radius: 4px;
+}
+.error-msg {
+  color: crimson;
+  opacity: 0;
+  transition: opacity .3s;
+}
+.error ~ .error-msg {
+  opacity: 1;
 }

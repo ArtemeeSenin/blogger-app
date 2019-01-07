@@ -5,15 +5,17 @@ block content
     form(action="/api/posts")
         label Title
             input(name="title" type="text")
+            .error-msg Must not be empty
         label Content
             textarea(name="content" cols="30" rows="10")
+            .error-msg Must not be empty
         label Categories (multiple)
             select(name="categories" multiple)
                 option(value="News") News
                 option(value="Travel") Travel
                 option(value="Food") Food
                 option(value="Photography") Photography
+            .error-msg Must not be empty
         button.button(type="submit") Add
-        //- button.button(type="butotn" onClick="window.location.href = document.referrer") Go back
 
     script(src="/javascripts/add-post.js")
