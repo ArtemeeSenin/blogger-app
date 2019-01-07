@@ -1,12 +1,14 @@
 # blogger-app
 Simple blog made with Node, MongoDB
 
-[Reference task](https://kodaktor.ru/blogapi2.pdf)
+This app was made as a [task](https://kodaktor.ru/blogapi2.pdf)
 
-Application was deployed to heroku and is available [here](https://limitless-reef-49721.herokuapp.com)
+Application was [deployed to heroku](https://limitless-reef-49721.herokuapp.com) and is available [here](https://limitless-reef-49721.herokuapp.com)
 
 Backend is made with Express on Node.js, as a database was used MongoDB with Mongoose and deployed to mLab.
+
 Front-end was made with ES6 and simple HTML/CSS.
+Form consists of three parts text input, textarea and select. Selected options are converted to array and are stored the same in MongoDB, this allows to easily search items by category and render marks in pug template without converting string to array.
 
 For CRUD operations under server side there was created api which is used by JavaScript Fetch API
 
