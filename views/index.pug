@@ -2,6 +2,7 @@ extends layout
 
 block content
   h1= title
+    img.logo(src="/favicon.png" alt="logo" width="36px")
   h2 Recent posts in my blog
   ul.posts#post-list
     each post in postsList
@@ -12,9 +13,9 @@ block content
             each category in post.categories
               li= category
           p= post.content
-          button(data-id=post._id) Delete
+          button.button.button--small(data-id=post._id) Delete
 
   hr
-  a(href="/add-post") Add post
+  a.button(href="/add-post") Add post
 
   script(src="/javascripts/index.js")

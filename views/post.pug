@@ -7,8 +7,8 @@ block content
         each category in categories
             li= category
     hr
-    button#delete(data-id=_id) Delete
-    br
-    a(href="/") See all posts
+    button.button.button--small#delete(data-id=_id) Delete
+    a.button(href="/") See all posts
+    a.button(href="/add-post") Add post
 
     script(src="/javascripts/post.js")

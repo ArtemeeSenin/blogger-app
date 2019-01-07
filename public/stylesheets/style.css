@@ -7,6 +7,39 @@ a {
   color: #00B7FF;
 }
 
+.logo {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.button {
+  min-width: 120px;
+  display: inline-block;
+  margin-top: 6px;
+  padding: 6px;
+  border: 1px solid rgb(255, 196, 35);
+  border-radius: 4px;
+  color: #1f1f1f;
+  background-color: rgba(255, 196, 35, 0.5);
+  text-decoration: none;
+  margin-right: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+}
+.button--small {
+  min-width: 80px;
+  font-size: 10px;
+  padding: 4px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+}
 .posts, .categories {
   list-style-type: none;
   padding: 0;
