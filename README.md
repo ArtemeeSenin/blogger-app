@@ -35,7 +35,7 @@ Response:
         ],
         "_id":"5c335aa00adcf10c3b4aeb78",
         "title":"The creator of express will continue his work",
-        "content":"After Express he will continue working with Node.js, but on a brandnew project Koa.\n\nAs he said he will implement his ideas as they must be done",
+        "content":"After Express he will continue working ...",
         "date":"2019-01-07T13:56:48.199Z"
     },
     {
@@ -49,6 +49,7 @@ Response:
     }
 ]
 ```
+---
 
 Route: [/api/posts](https://limitless-reef-49721.herokuapp.com/api/posts) `POST` – Add new post
 Request: 
@@ -75,6 +76,7 @@ Response:
     "date": "2019-01-07T14:58:44.095Z"
 }
 ```
+---
 
 Route: [/api/posts/:id](https://limitless-reef-49721.herokuapp.com/posts/5c335a770adcf10c3b4aeb77) `GET` 
 Response:
@@ -89,6 +91,7 @@ Response:
     "date": "2019-01-07T13:56:07.394Z"
 }
 ```
+---
 
 Route: [/api/posts/:id](https://limitless-reef-49721.herokuapp.com/posts/5c335a770adcf10c3b4aeb77) `DELETE` 
 Response:
